@@ -32,7 +32,7 @@ public class PersonServlet  extends HttpServlet{
 		//Adiciona a lista de pessoas na requisição
 		req.setAttribute("peopleList", peopleList);
 		//Dispachar para um JP
-		RequestDispatcher despacher = req.getRequestDispatcher("/result.jsp");
+		RequestDispatcher dispatcher = req.getRequestDispatcher("/result.jsp");
 		dispatcher.forward(req, resp);
 		
 	}
